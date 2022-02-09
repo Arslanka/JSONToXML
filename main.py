@@ -2,10 +2,6 @@ import string
 import time
 
 
-def show_variant() -> string:
-    print("Мой вариант -", 335089 % 36)
-
-
 def insert_tabs(tabs) -> string:
     return "  " * tabs
 
@@ -64,7 +60,6 @@ start_time = time.time()
 f = open("Json.json", "r")
 r = open("XML.xml", "w")
 file = f.read()
-show_variant()
 ans = ""
 JSON_to_XML(file, r)
 print(f'time:  {1000 * (time.time() - start_time)}')
